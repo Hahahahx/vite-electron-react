@@ -2,7 +2,7 @@ import { isDev } from "@common/utils";
 import * as path from "path";
 import * as url from "url";
 
-const devWid = isDev ? 950 : 0;
+const devWid = isDev ? 1000 : 0;
 const devHei = isDev ? 600 : 0;
 
 // 底部icon：40*40
@@ -46,7 +46,7 @@ const browserWindowOption = (
     return {
       width: devWid || 1000,
       height: devHei || 600,
-      minWidth: 320,
+      minWidth: 1000,
       ...commonOptions,
     };
   }

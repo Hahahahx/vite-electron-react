@@ -1,4 +1,7 @@
+@headerHei: 55px;
+
 .header {
+  height: @headerHei;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,19 +16,91 @@
   }
 
   .title {
+    color: rgb(194, 203, 211);
     flex: 8;
   }
 
   .opt {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    height: 100%;
+    padding-bottom: 15px;
+    text-align: right;
+    button {
+      height: 100%;
+      width: 50px;
+      outline: none;
+      border: 0;
+      background-color: transparent;
+      color: aliceblue;
+    }
+
+    .min:hover,
+    .max:hover {
+      background-color: #001e38;
+    }
+
+    .quit:hover {
+      background-color: #720202;
+    }
   }
 
   .icon {
-    flex: 1;
-    background-image: url("../../assets/img/icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: flex-start;
+    span {
+      background-image: url("../../assets/img/icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.sider {
+  padding-top: 10px;
+  overflow-y: scroll;
+  background-color: aliceblue;
+  display: flex;
+
+  .drag-box {
+    cursor: e-resize;
+    width: 5px;
+    float: right;
+  }
+
+  .ant-layout-sider {
+    background-color: aliceblue;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: aliceblue;
+  }
+
+  /*定义滚动条轨道
+ 内阴影+圆角*/
+  &::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // border-radius: 5px;
+    background-color: aliceblue;
+  }
+  /*定义滑块
+ 内阴影+圆角*/
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(24, 0, 240, 0.111);
+    background-color: aliceblue;
+  }
+
+  .ant-menu {
+    background-color: aliceblue;
   }
 }

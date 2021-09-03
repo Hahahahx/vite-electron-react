@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2788590 */
+  src: url('iconfont.woff2?t=1630658193701') format('woff2'),
+       url('iconfont.woff?t=1630658193701') format('woff'),
+       url('iconfont.ttf?t=1630658193701') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ipfs-crypt-zuidahua2:before {
+  content: "\e623";
+}
+
+.ipfs-crypt-zuidahua:before {
+  content: "\e622";
+}
+
+.ipfs-crypt-zuixiaohua:before {
+  content: "\e624";
+}
+
+.ipfs-crypt-webicon309:before {
+  content: "\e6a0";
+}
+

@@ -30,6 +30,7 @@ export default defineConfig({
       pagePath: path.join(rendererPath, "pages"),
       output: rendererPath,
       filename: "router.ts",
+      defaultLazyImport: false,
     }),
     commonjsExternals({
       externals: commonjsPackages,

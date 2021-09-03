@@ -6,6 +6,8 @@ import { HashRouter } from "react-router-dom";
 import { Routers } from "ux-autoroute";
 import routeConfig from "./router";
 import "./styles/index.less";
+// import "font-awesome/css/font-awesome.css";
+import "../assets/font/iconfont.css";
 
 initDB(DBConfig);
 
